@@ -4,7 +4,7 @@ const Navigation = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-3 mb-5">
         <div className="container-fluid">
-          <a className="navbar-brand text-warning" href="#!">Citralis Bank</a>
+          <a className="navbar-brand text-warning fw-bold" href="#!">Citralis Bank</a>
           <button
             className="navbar-toggler"
             type="button"
@@ -17,7 +17,7 @@ const Navigation = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav mx-auto fw-bold">
+            <ul className="navbar-nav mx-auto ">
               <li className="nav-item">
                 <a className="nav-link text-warning" aria-current="page" href="#!">Home</a>
               </li>
@@ -28,6 +28,12 @@ const Navigation = () => {
                 <a className="nav-link text-warning" href="#!">Pricing</a>
               </li>
             </ul>
+            <div className="d-flex justify-content-end">
+              <button className="btn btn-warning  rounded-pill shadow-sm px-3 py-2" 
+                style={{ cursor: 'default'}}>
+                  Balance: 10000
+              </button>
+            </div>
           </div>
         </div>
       </nav>
